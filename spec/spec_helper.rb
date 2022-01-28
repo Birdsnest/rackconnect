@@ -6,7 +6,7 @@ require 'yaml'
 
 RSpec.configure do |c|
   c.before(:suite) do
-    creds = YAML.load_file("/Users/mdarby/.fog")
+    creds = YAML.load_file(".fog").deep_symbolize_keys
 
     Rackconnect::Auth.new(
       {

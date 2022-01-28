@@ -16,3 +16,4 @@ mkmf.log
 lib/bootstrap.rb
 .DS_Store
 .tags*
+.fog

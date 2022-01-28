@@ -36,6 +36,9 @@ Rackconnect follows an ActiveModel-esque pattern that most rubyists will feel fa
 ### Testing
 * To use the built-in mock server (recommended for normal development). This testing method alleviates the need to contact RackConnect's API but does create a potential break between mock and service.
 
+    * Copy `.fog-example` to `.fog` and fill in your RackConnect credentials.
+      These are required even to test with the mock server.
+
     * `rake mock:server` and a Sinatra app will start. This app will accept only URIs supported by RackConnect. Each successful response is a JSON blob that is documented as the appropriate response.
 
     * Open a new tab and run `rake mock:spec` to run the test suite. This method is a wrapper to RSpec and it knows to use the mock server.

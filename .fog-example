@@ -1,0 +1,5 @@
+---
+rackconnect:
+  rackspace_api_key: 00000000000000000000000
+  rackspace_username: test
+  rackspace_region: AAA
